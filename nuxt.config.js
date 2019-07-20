@@ -56,6 +56,7 @@ export default {
         // proxyHeaders: false
         retry: { retries: 1 },
         debug: false,
+        baseURL: process.env.API_URL || 'http://localhost:3000'
     },
     /*
     ** Build configuration
