@@ -52,9 +52,9 @@ export default {
             animation: slide-in 0.5s forwards;
         }
 
-        &.closed {
-            animation: slide-out 0.5s forwards;
-        }
+        /*&.closed {*/
+        /*    animation: slide-out 0.5s forwards;*/
+        /*}*/
 
         .quick-menu {
             display: flex;

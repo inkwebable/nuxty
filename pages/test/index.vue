@@ -1,10 +1,21 @@
 <template>
-    <p>Testing fhgrid</p>
+    <div>
+        <p>Testing user {{ users[0].name }}</p>
+    </div>
 </template>
 
 <script>
 
 export default {
-  layout: 'fhgrid',
-}
+    layout: 'fhgrid',
+    async asyncData({ $axios }) {
+        let { data } = await $axios.get('/api/users');
+        return { users: data };
+    },
+    head() {
+        return {
+            title: 'Testing',
+        };
+    },
+};
 </script>
