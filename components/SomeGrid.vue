@@ -1,5 +1,5 @@
 <template>
-  <div class="some-grid">
+  <div class="some-grid std-padding">
     <header>
       <slot name="header">
         <h1>Header</h1>

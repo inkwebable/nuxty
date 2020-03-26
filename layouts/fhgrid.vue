@@ -15,10 +15,11 @@
                     </div>
                 </div>
                 <div class="header-right-container">
-                    <QuickNav/>
-                    <div class="ml-2">
+                    <QuickNav>
+                      <div class="ml-2">
                         <ToggleMenu :open="menuOpen" @click="toggle(!menuOpen)" />
-                    </div>
+                      </div>
+                    </QuickNav>
 
                     <!-- Burger menu -->
                     <Menu :open="menuOpen" @click="toggle(false)">
@@ -31,17 +32,17 @@
         <main class="layout-grid-content">
             <nuxt />
         </main>
-        <footer class="layout-grid-footer">
+        <footer class="layout-grid-footer std-padding">
             <p>The footer</p>
         </footer>
     </div>
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
-import QuickNav from "~/components/QuickNav.vue";
-import Menu from "~/components/Menu.vue";
-import ToggleMenu from "../components/ToggleMenu";
+import Logo from '~/components/Logo.vue';
+import QuickNav from '~/components/QuickNav.vue';
+import Menu from '~/components/Menu.vue';
+import ToggleMenu from '../components/ToggleMenu';
 
 import { mapMutations } from 'vuex';
 

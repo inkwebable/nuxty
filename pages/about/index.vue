@@ -1,10 +1,10 @@
 <template>
     <SomeGrid>
       <template v-slot:header>
-        <QuickNav />
+        <h2>The About page</h2>
       </template>
       <template v-slot:body>
-        <p>This is the content from the slot.</p>
+        <p>This is the content from the body slot.</p>
       </template>
     </SomeGrid>
 </template>
@@ -15,9 +15,9 @@ import SomeGrid from '~/components/SomeGrid';
 
 export default {
     layout: 'fhgrid',
-  components: {
-    SomeGrid,
-    QuickNav,
-  }
+    components: {
+        SomeGrid,
+        QuickNav,
+    }
 }
 </script>
