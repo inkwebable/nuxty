@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import SomeGrid from '~/components/someGrid';
+import SomeGrid from '~/components/SomeGrid';
 
 export default {
     layout: 'fhgrid',
